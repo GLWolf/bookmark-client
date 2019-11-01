@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import BookmarksContext from '../BookmarksContext';
 import config from '../config';
 
+const Required = () => (
+    <span className='EditBookmark__required'>*</span>
+  )
+  
 class EditBookmark extends Component {
   static propTypes = {
     match: PropTypes.shape({
