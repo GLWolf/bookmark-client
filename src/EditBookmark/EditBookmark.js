@@ -102,7 +102,7 @@ class EditBookmark extends Component {
   };
 
   render() {
-    const { error, title, url, description, rating } = this.state
+    const {title, url, description, rating } = this.state
     return (
       <section className='EditBookmark'>
         <h2>Edit bookmark</h2>
