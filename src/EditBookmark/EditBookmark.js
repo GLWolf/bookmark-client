@@ -6,7 +6,7 @@ import config from '../config';
 const Required = () => (
     <span className='EditBookmark__required'>*</span>
   )
-  
+
 class EditBookmark extends Component {
   static propTypes = {
     match: PropTypes.shape({
@@ -99,7 +99,7 @@ class EditBookmark extends Component {
         this.setState({ error })
       })
   }
-  }
+  
 
   handleClickCancel = () => {
     this.props.history.push('/')
@@ -191,5 +191,6 @@ class EditBookmark extends Component {
       </section>
     );
   }
+}
 
 export default EditBookmark;
